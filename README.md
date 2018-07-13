@@ -24,7 +24,7 @@ The app will have 3 input temperatures. The minimum, maximum, and target tempera
 
 If the temperature exceeds the range of inputs, obtain the attention of the user.  
 
-Your app should handle both Farenheit and Celcius values based upon configuration controlled by the user at run-time.  
+Your app should handle both Farenheit and Celsius values based upon configuration controlled by the user at run-time.  
 
 Ensure valid field and form entry for target using the closed interval range [200, 500]F or [90, 240]C.  
 
