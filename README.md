@@ -1,4 +1,10 @@
 # CST238SRS02  
+
+You may choose between one of two possible projects. The first is a coding exercise. The second, an interviewing exercise. 
+
+
+Option #1
+
 Target Alarm Range  
 
 You've been tasked with creating a mobile UI for an industrial baking oven.  
@@ -14,16 +20,45 @@ Specification:
 
 Create an app that controls an oven's temperature.  
 
-The app will have 3 input temperatures. The maximum, minimum, and target temperature.  The app must also output the current oven temperature.  
+The app will have 3 input temperatures. The minimum, maximum, and target temperature.  The app must also display the current oven temperature.  
 
 If the temperature exceeds the range of inputs, obtain the attention of the user.  
 
-Ensure valid field and form entry for target using the range [200, 500]F or [90, 240]C.  
+Your app should handle both Farenheit and Celcius values based upon configuration controlled by the user at run-time.  
 
-Your app should handle both Farenheit and Celcius values based upon configuration.  
+Ensure valid field and form entry for target using the closed interval range [200, 500]F or [90, 240]C.  
 
-You may use any method of input/output you want for adjusting set points.  
+You may use any method of input/output you want for adjusting set points.  Field and form level validation is expected for all fields. Note the fields are not independent because min should never exceed max.   
 
-Consider allowing for multiple input methods.  For example, you may want the user to enter data using an entry field for accurate input and sliders for quick input.  The choice of how to make the input easy, clear, and accurate is a balancing act.  
+Consider allowing for multiple input methods.  For example, you may want the user to enter data using an entry field for accurate input and sliders for quick input.  The choice of how to make the input easy, clear, and accurate is a balancing act and part of the design goal.  
 
+---
 
+Option #2  
+
+Interviewing Skills  
+
+Purpose:  
+
+- Learn how to interview the user of an app you are designing.  
+- Provide feedback to the user to see if what you are creating meets their needs.  
+
+Often applications are developed in a vacuum. The User Interface designer creates an application they think will be helpful to their target users but finds out after spending months (and sometimes years) they didn't understand the problem or there is already a solution.  
+
+In this SRS your job is to develop an application so you can practice interviewing potential users before starting the difficult work of creating an application.
+
+You must select a potential user that you don't know. A good rule of thumb is that if you know their name already, pick someone else.
+
+Some good sources may be school staff. You may also interview the owner of a small business or a public official. For example, TriMet has developer resources and people that you can interview regarding their software services.
+
+Present the problem and a proposed solution as a mobile application. Develop a set of requirements, prototype screens, storyboards, use cases, and any other materials that help you convey the idea to the class.
+
+We will grade each proposal and possibly create a prototype application from your idea.
+
+Emphasize the problem, why current solutions are inadequate, and why your proposal will improve the current situation.
+
+Identify the stakeholders and be sure to interview at least one representative from each type of stakeholder category.
+
+After you draw up your proposal, review it with the person you interviewed to be sure you captured the entire problem and your solution is adequate.
+
+Include the contact information of all the people you interviewed.
