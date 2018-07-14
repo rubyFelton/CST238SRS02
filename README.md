@@ -43,13 +43,13 @@ Purpose:
 - Learn how to interview the user of an app you are designing.  
 - Provide feedback to the user to see if what you are creating meets their needs.  
 
-Often applications are developed in a vacuum. The User Interface designer creates an application they think will be helpful to their target users but finds out after spending months (and sometimes years) they didn't understand the problem or better solution already exists.  
+Often applications are developed in a vacuum. The User Interface designer creates an application they think will be helpful to their target users but finds out after spending months (and sometimes years) they didn't understand the problem or a better solution already exists.  
 
 In this SRS your job is to develop an application design so you can practice interviewing potential users before starting the difficult work of creating an application.  
 
 You must select a potential user that you don't know. A good rule of thumb is that if you know their name already, pick someone else.  A friend of a friend is fine.  The key is to not have a personal relationship with the person you are interviewing.  
 
-Some good sources may be school staff, public official, business owner, etc... For example, TriMet has developer resources and people that you can interview regarding their software services.  
+Some good sources may be school staff, public officials, business owners, etc... For example, TriMet has developer resources and people that you can interview regarding their software services.  
 
 Present the problem and a proposed solution as a mobile application. Develop a set of requirements, wireframes, storyboards, use cases, and any other materials that help you convey the idea to the class.  
 
