@@ -47,7 +47,7 @@ Often applications are developed in a vacuum. The User Interface designer create
 
 In this SRS your job is to develop an application design so you can practice interviewing potential users before starting the difficult work of creating an application.  
 
-You must select a potential user that you don't know. A good rule of thumb is that if you know their name already, pick someone else.  A friend of a friend is fine.  
+You must select a potential user that you don't know. A good rule of thumb is that if you know their name already, pick someone else.  A friend of a friend is fine.  The key is to not have a personal relationship with the person you are interviewing.  
 
 Some good sources may be school staff, public official, business owner, etc... For example, TriMet has developer resources and people that you can interview regarding their software services.  
 
