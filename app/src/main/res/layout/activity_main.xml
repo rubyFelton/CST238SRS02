@@ -51,7 +51,6 @@
 
     <SeekBar
         android:id="@+id/max_seek"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="250dp"
         android:layout_height="25dp"
         android:layout_marginBottom="8dp"
@@ -124,7 +123,6 @@
 
     <SeekBar
         android:id="@+id/target_seek"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="250dp"
         android:layout_height="25dp"
         android:layout_marginLeft="8dp"
@@ -195,7 +193,6 @@
 
     <SeekBar
         android:id="@+id/min_seek"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="250dp"
         android:layout_height="25dp"
         android:layout_marginLeft="8dp"
