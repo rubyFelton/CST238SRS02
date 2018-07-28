@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:visibility="visible">
+
+    <Spinner
+        android:id="@+id/units"
+        android:layout_width="127dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/max_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/units" />
+
+    <TextView
+        android:id="@+id/minValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/max_seek"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/max_seek"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/maxValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/max_seek"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/max_seek"
+        android:gravity="center" />
+
+    <SeekBar
+        android:id="@+id/max_seek"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/maxValue1"
+        android:layout_toRightOf="@id/minValue1"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintBottom_toTopOf="@+id/target_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_label" />
+
+    <TextView
+        android:id="@+id/curentValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/max_seek"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/max_number"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/max_seek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/max_seek"
+        app:layout_constraintTop_toBottomOf="@+id/max_label" />
+
+    <TextView
+        android:id="@+id/target_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Target"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_seek" />
+
+    <TextView
+        android:id="@+id/minValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/max_seek"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/target_seek"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/maxValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/max_seek"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/target_seek"
+        android:gravity="center" />
+
+    <SeekBar
+        android:id="@+id/target_seek"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/maxValue2"
+        android:layout_toRightOf="@id/minValue2"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/target_label" />
+
+    <TextView
+        android:id="@+id/curentValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target_seek"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/target_number"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/target_seek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/target_seek"
+        app:layout_constraintTop_toBottomOf="@+id/target_label" />
+
+    <TextView
+        android:id="@+id/min_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/target_seek" />
+
+    <TextView
+        android:id="@+id/minValue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/max_seek"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/min_seek"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/maxValue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/max_seek"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/min_seek"
+        android:gravity="center" />
+
+    <SeekBar
+        android:id="@+id/min_seek"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/maxValue3"
+        android:layout_toRightOf="@id/minValue3"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_label" />
+
+    <TextView
+        android:id="@+id/curentValue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/min_seek"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/min_number"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/min_seek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/min_seek"
+        app:layout_constraintTop_toBottomOf="@+id/min_label" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="368dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/current_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_seek" />
+
+    <TextView
+        android:id="@+id/current_label"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Current"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="198dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
